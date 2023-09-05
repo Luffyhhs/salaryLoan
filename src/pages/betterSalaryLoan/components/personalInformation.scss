@@ -1,0 +1,51 @@
+.nrc_data_gp {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  select,
+  input {
+    height: 3.5rem;
+    background-color: var(--background-color);
+    border: none;
+    outline: none;
+    border-radius: 0.7rem;
+    font-size: 1.8rem;
+    padding: 1.6rem 0 1.6rem 1.2rem;
+  }
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.6rem !important;
+}
+.marital_status,
+.loan_toner,
+.dependent_number,
+.family_member,
+.home_ownership,
+.stay_years {
+  .radio-gp {
+    display: flex;
+    align-items: center;
+    input[type="radio"] {
+      width: auto;
+    }
+  }
+}
+.input-gp-mini {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.6rem;
+
+  .mini_input_title {
+    font-size: 1.5rem;
+  }
+}
+.property_gp {
+  margin-top: 1.6rem;
+  input {
+    width: 30%;
+  }
+}

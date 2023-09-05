@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Fragment } from "react";
+import "./styles/global.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import BetterSalaryLoan from "./pages/betterSalaryLoan/BetterSalaryLoan";
+import BetterSalaryAdvance from "./pages/betterSalaryAdvance/BetterSalaryAdvance";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="salaryLoan" element={<BetterSalaryLoan />} />
+            <Route path="salaryAdvance" element={<BetterSalaryAdvance />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Fragment>
   );
 }
 

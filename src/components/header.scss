@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(#f5a41c, #ffd600);
+  padding: 1.6rem 3.2rem;
+
+  .logo_img {
+    width: 16.4rem;
+    height: 100%;
+  }
+
+  .main_title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    color: var(--primary-brown-dark);
+    text-align: right;
+
+    span {
+      color: var(--black);
+    }
+  }
+}
