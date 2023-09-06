@@ -1,3 +1,6 @@
 #mab_sallary_acc_number {
   width: 40%;
+  @media only screen and (max-width: 820px) {
+    width: 90%;
+  }
 }

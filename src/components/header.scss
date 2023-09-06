@@ -16,6 +16,11 @@
     line-height: 4rem;
     color: var(--primary-brown-dark);
     text-align: right;
+    @media only screen and (max-width: 500px) {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2rem;
+    }
 
     span {
       color: var(--black);

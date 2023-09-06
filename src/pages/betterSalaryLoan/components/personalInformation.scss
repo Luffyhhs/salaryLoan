@@ -28,6 +28,12 @@
   .radio-gp {
     display: flex;
     align-items: center;
+    @media only screen and (max-width: 1000px) {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 0.8rem 1.6rem;
+    }
     input[type="radio"] {
       width: auto;
     }

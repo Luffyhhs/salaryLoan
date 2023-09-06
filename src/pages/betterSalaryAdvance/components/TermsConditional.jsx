@@ -80,7 +80,7 @@ const TermsConditional = () => {
           </p>
         </div>
         <div className="input-container">
-          <div className="form-gp check-gp">
+          <div className="form-gp check-gp agree_terms">
             <input type="checkbox" name="" id="agree_condition" />
             <label for="agree_condition" className="input_title">
               I have read and accepted the Terms & Conditions.
